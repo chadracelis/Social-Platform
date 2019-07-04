@@ -11,18 +11,15 @@ class CreateProject extends Component {
 
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.value // finds id which we defined under input to match the state props
+            [e.target.id]: e.target.value 
         })
     }
 
     handleSubmit = e => {
-        e.preventDefault(); // prevents refresh of page
+        e.preventDefault(); 
         this.props.createProject(this.state);
         this.props.history.push('/');
     }
-    // we create a project in this component which gets passed as an action to ProjectActions. In ProjectActions, it gets
-    // dispatched to the ProjectReducer where it checks the the type of action. Once it finds a matching action type,
-    // it will update the state of that action type to the RootReducer
 
     render() {
         const { auth } = this.props
