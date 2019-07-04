@@ -30,8 +30,7 @@ class Dashboard extends Component {
 const mapStateToProps = (state) => {
     console.log(state);
     return {
-        // projects: state.project.projects // grabbing state from project (RootReducer) -> projects (ProjectReducer)
-        projects: state.firestore.ordered.projects, // display collections from firestore rather dummy data in redux
+        projects: state.firestore.ordered.projects, 
         auth: state.firebase.auth,
         notifications: state.firestore.ordered.notifications
     }
@@ -40,7 +39,7 @@ const mapStateToProps = (state) => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
-    { collection: 'projects', limit: 5, orderBy: ['createdAt', 'desc']}, // we ask firestore here which collection we want to connect, display limit to 5 projects
+    { collection: 'projects', limit: 5, orderBy: ['createdAt', 'desc']}, 
     { collection: 'notifications', limit: 5, orderBy: ['time', 'desc']}
   ])
 )(Dashboard)
