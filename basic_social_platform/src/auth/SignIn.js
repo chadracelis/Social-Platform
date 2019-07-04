@@ -16,7 +16,7 @@ class SignIn extends Component {
     }
 
     handleSubmit = e => {
-        e.preventDefault(); // prevents refresh of page
+        e.preventDefault(); 
         this.props.signIn(this.state);
     
     }
