@@ -13,12 +13,12 @@ class SignUp extends Component {
 
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.value // finds id which we defined under input to match the state props
+            [e.target.id]: e.target.value 
         })
     }
 
     handleSubmit = e => {
-        e.preventDefault(); // prevents refresh of page
+        e.preventDefault(); 
         console.log(this.state);
         this.props.signUp(this.state)
     }
