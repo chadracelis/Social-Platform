@@ -13,7 +13,7 @@ import moment from 'moment'
      if(project) {
        return (
         <div className="container section project-details">
-          <div className="card z-dept-0">
+          <div className="card z-depth-0">
             <div className="card-content">
               <span className="card-title">{ project.title }</span>
               <p> { project.content }</p>
