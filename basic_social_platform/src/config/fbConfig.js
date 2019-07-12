@@ -4,7 +4,7 @@
   
   // Your web app's Firebase configuration
   var fbConfig = {
-    apiKey: "AIzaSyCdn6KMd9ZNXT9vK0ZdnC6GIV38p12k2yk",
+    apiKey: "************************************",
     authDomain: "shower-thoughts1.firebaseapp.com",
     databaseURL: "https://shower-thoughts1.firebaseio.com",
     projectId: "shower-thoughts1",
