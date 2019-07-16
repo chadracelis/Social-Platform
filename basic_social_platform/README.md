@@ -8,23 +8,5 @@ Getting Started
 •	Inside the collection ‘projects’, creating the following fields: string-‘authorFirstName’, string-‘authorLastName’, string-‘authorId’, string-‘content’, string-‘title’, string-‘createdAt’ </br>
 •	Inside the collection ‘users’, creating the following fields: string-‘firstName’, string-‘lastName’, string-‘initials’ </br>
 •	Inside the collection ‘notifications’, creating the following fields: string-‘user’, string-‘content’, string-‘time’ </br>
-•	Inside the firebase database, go to the ‘rules’ tab and copy and paste the following security config </br>
-
-rules_version = '2'; </br>
-service cloud.firestore { </br>
-  match /databases/{database}/documents { </br>
-    match /projects/{project} { </br>
-      allow read, write: if request.auth.uid != null </br>
-    } </br>
-    match /users/{userId}{ </br>
-      allow create </br>
-      allow read: if request.auth.uid != null </br>
-      allow write: if request.auth.uid == userId </br>
-    } </br>
-    match /notifications/{notification} { </br>
-      allow read, write: if request.auth.uid != null </br>
-    } </br>
-  } </br>
-}
-</br>
+•	Inside the repo's main directory, copy the code inside secConfig.js and paste it inside firebase-database-‘rules’ </br>
 •	npm start to start the local server 
