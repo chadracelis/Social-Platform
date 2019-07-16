@@ -26,4 +26,5 @@ service cloud.firestore {
     }
   }
 }
+</br>
 •	npm start to start the local server 
