@@ -8,7 +8,7 @@ Getting Started
 •	Inside the collection ‘projects’, creating the following fields: string-‘authorFirstName’, string-‘authorLastName’, string-‘authorId’, string-‘content’, string-‘title’, string-‘createdAt’ </br>
 •	Inside the collection ‘users’, creating the following fields: string-‘firstName’, string-‘lastName’, string-‘initials’ </br>
 •	Inside the collection ‘notifications’, creating the following fields: string-‘user’, string-‘content’, string-‘time’ </br>
-•	Inside the repo's main directory, copy the code inside secConfig.js and paste it inside firebase-database-‘rules’ </br>
+•	Inside the repo's main directory, copy the code inside firestore.rules and paste it inside firebase-database-‘rules’ </br>
 •	npm start to start the local server 
 <p></p>
 You can checkout the live preview of this project here -> https://shower-thoughts1.firebaseapp.com/signin
