@@ -1,5 +1,6 @@
 <h2>Getting Started</h2> 
-(this project uses react and firebase) </br>
+(this project uses react and firebase) 
+<p></p>
 
 •	Clone this repo </br>
 •	npm install to install all req'd dependencies </br>
