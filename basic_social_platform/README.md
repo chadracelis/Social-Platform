@@ -1,4 +1,4 @@
-Getting Started
+<h2>Getting Started</h2> </br>
 (this project uses react and firebase)
 
 •	Clone this repo </br>
