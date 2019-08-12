@@ -14,4 +14,4 @@
 <p></p>
 You can checkout the live preview of this project here -> https://shower-thoughts1.firebaseapp.com/signin
 <p></p>
-<img src="./portfolio.png" alt="Project">
+<img src="./app.png" alt="Project">
