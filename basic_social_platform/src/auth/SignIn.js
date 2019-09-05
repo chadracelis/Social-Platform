@@ -11,14 +11,13 @@ class SignIn extends Component {
 
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.value // finds id which we defined under input to match the state props
+            [e.target.id]: e.target.value 
         })
     }
 
     handleSubmit = e => {
         e.preventDefault(); 
         this.props.signIn(this.state);
-    
     }
 
     render() {
@@ -28,7 +27,7 @@ class SignIn extends Component {
          return (
             <div className="container">
               <form className="white" onSubmit={this.handleSubmit}>
-                <h5 className="grey-text text-darken-3">Sign In</h5>
+                <h4 className="grey-text text-darken-3 h4-custom">Sign In</h4>
                 <div className="input-field">
                   <label htmlFor="email">Email</label>
                   <input type="email" id="email" onChange={this.handleChange} />
