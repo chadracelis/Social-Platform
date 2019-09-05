@@ -1,15 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/img/city1.jpg), url(/img/city2.png);
-  background-repeat: no-repeat, no-repeat;
-  background-size: 102%, 100%;
+  background-image: url(/img/city1.jpg);
+  background-repeat: repeat;
+  background-size: 100%, 100%;
   background-position: top, bottom;
 }
 
 form {
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px lightgrey;
 }
 
 .notifications {
@@ -17,8 +19,35 @@ form {
   margin-top: 7.5px;
 }
 
+.notifications-card {
+  outline: 1px solid grey;
+  border-radius: 20px;
+}
+
 .projectCard {
   outline: 1px solid grey;
+}
+
+.h4-custom {
+  padding: 10px;
+}
+
+.h5-custom {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-custom {
+  box-shadow: 5px 5px 5px 0px darkgray;
+}
+
+.brand-logo {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+label {
+  padding: 10px;
 }
 
 code {
