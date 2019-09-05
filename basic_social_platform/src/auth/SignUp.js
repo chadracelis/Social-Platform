@@ -13,12 +13,12 @@ class SignUp extends Component {
 
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.value 
+            [e.target.id]: e.target.value
         })
     }
 
     handleSubmit = e => {
-        e.preventDefault(); 
+        e.preventDefault();
         console.log(this.state);
         this.props.signUp(this.state)
     }
@@ -29,22 +29,22 @@ class SignUp extends Component {
         return (
             <div className="container">
               <form className="white" onSubmit={this.handleSubmit}>
-                <h5 className="grey-text text-darken-3">Sign Up</h5>
+                <h4 className="grey-text text-darken-3 h4-custom">Sign Up</h4>
                 <div className="input-field">
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" onChange={this.handleChange} />
+                  <label htmlFor="email"> Email</label>
+                  <input type="email" id="email" required onChange={this.handleChange} />
                 </div>
                 <div className="input-field">
-                  <label htmlFor="password">Password</label>
-                  <input type="password" id="password" onChange={this.handleChange} />
+                  <label htmlFor="password"> Password</label>
+                  <input type="password" id="password" required onChange={this.handleChange} />
                 </div>
                 <div className="input-field">
                   <label htmlFor="firstName">First Name</label>
-                  <input type="text" id="firstName" onChange={this.handleChange} />
+                  <input type="text" id="firstName" required onChange={this.handleChange} />
                 </div>
                 <div className="input-field">
-                  <label htmlFor="lastName">Last Name</label>
-                  <input type="text" id="lastName" onChange={this.handleChange} />
+                  <label htmlFor="lastName"> Last Name</label>
+                  <input type="text" id="lastName" required onChange={this.handleChange} />
                 </div>
                 <div className="input-field">
                   <button className="btn light-green lighten-1 z-depth-0">Sign Up</button>
@@ -71,3 +71,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(SignUp)
+
