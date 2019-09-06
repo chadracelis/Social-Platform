@@ -6,7 +6,6 @@ import { Redirect } from 'react-router-dom'
 import moment from 'moment'
 
  const ProjectDetails = (props) => {
-     // const id = props.match.params.id;
      const { project, auth } = props
      if(!auth.uid) return <Redirect to='/signin' />
 
@@ -15,10 +14,10 @@ import moment from 'moment'
         <div className="container section project-details">
           <div className="card z-depth-0">
             <div className="card-content">
-              <span className="card-title">{ project.title }</span>
+              <h5 className="h5-custom">{ project.title }</h5>
               <p> { project.content }</p>
             </div>
-            <div className="card-action grey lighten-4 grey-text"> 
+            <div className="card-action grey lighten-4 grey-text card-custom"> 
               <div>Posted by {project.authorFirstName} {project.authorLastName} </div>
               <div> {moment(project.createdAt.toDate().toString()).calendar()} </div>
             </div>
