@@ -18,7 +18,7 @@ class CreateProject extends Component {
     handleSubmit = e => {
         e.preventDefault(); 
         this.props.createProject(this.state);
-        this.props.history.push('/');
+        this.props.history.push('/'); // redirect user to homepage after creating project
     }
 
     render() {
@@ -28,7 +28,7 @@ class CreateProject extends Component {
         return (
             <div className="container">
               <form className="white" onSubmit={this.handleSubmit}>
-                <h5 className="grey-text text-darken-3">Express Your Thoughts</h5>
+                <h4 className="grey-text text-darken-3 h4-custom">Express Your Thoughts</h4>
                 <div className="input-field">
                   <label htmlFor="title">Title</label>
                   <input type="text" id="title" onChange={this.handleChange} />
@@ -59,3 +59,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateProject)
+
