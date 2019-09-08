@@ -12,6 +12,6 @@
 •	Inside the repo's main directory, copy the code inside firestore.rules and paste it inside firebase-database-‘rules’ </br>
 •	npm start to start the local server 
 <p></p>
-You can checkout the live preview of this project here -> https://shower-thoughts1.firebaseapp.com/signin
+You can checkout the live preview of this project here -> https://shower-thoughts1.firebaseapp.com/
 <p></p>
 <img src="./app.png" alt="Project">
