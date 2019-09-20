@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/img/city1.jpg);
+  background-image: url(/img/rain.jpg);
   background-repeat: repeat;
   background-size: 100%, 100%;
   background-position: top, bottom;
@@ -14,40 +14,79 @@ form {
   box-shadow: 5px 5px 5px 0px lightgrey;
 }
 
-.notifications {
+input {
+  border-radius: 5px !important;
+  padding: 10px;
+}
+
+.notifications { /* notifications title */
   padding: 20px;
   margin-top: 7.5px;
 }
 
-.notifications-card {
+.notifications-card { /* notifications card */
   outline: 1px solid grey;
   border-radius: 20px;
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
 }
 
-.projectCard {
-  outline: 1px solid grey;
-}
-
-.h4-custom {
+.h4-custom { /* title for new project + signup + signout page */
   padding: 10px;
+  font-weight: bold;
 }
 
-.h5-custom {
+.h5-custom { /* project details title */
   padding: 20px;
   text-align: center;
 }
 
-.card-custom {
-  box-shadow: 5px 5px 5px 0px darkgray;
-}
-
-.brand-logo {
+.brand-logo { /* nav title */
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 50px;
+}
+
+.user-bubble { /* user-initials bubble */
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  color: black;
+}
+
+.summary { /* project summary card */
+  outline: 1px solid grey;
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+.details { /* project details card */
+  box-shadow: 5px 5px 5px 0px darkgray;
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+.btn { /* all buttons */
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
 label {
   padding: 10px;
+}
+
+@media screen and (max-width: 900px){ 
+  
+  a.brand-logo {
+    position: relative;
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 550px){ 
+  
+  a.brand-logo {
+    position: relative;
+    left: 75px;
+    font-size: 1rem;
+  }
 }
 
 code {
